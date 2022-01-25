@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b-show {
+    display: block;
+    animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .form {
+        min-height: 50vh;
+        padding: 20px;
+        form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            button,
+            input {
+                width: 100%;
+                &:last-child {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    #qrcode-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
